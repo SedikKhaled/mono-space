@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    direction: ltr;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+
+}
+.img {
+    text-align: center;
+    align-items: center;
+}
+.img i {
+    position: relative;
+    background-color: rgb(7, 167, 7);
+    color: white;
+    border-radius: 50%;
+    right: 30px;
+    top: 40px;
+}
+.img img {
+    border-radius: 50%;
+}
+.container h3 span {
+    position: relative;
+    bottom: 10px;
+}
+.container h3 span i {
+    border-radius: 50%;
+    font-size: 15px;
+    color: rgb(7, 167, 7);
+    background-color: rgb(7, 167, 7);
+}
+.info {
+    opacity: 0.7;
+
+}
+.info span {
+padding-left: 5px;
+}
+.info span i {
+    font-size: 15px;
+    padding-right: 10px;
+}
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.my-caption {
+    background-color: white;
+    width: 90%;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 20px 0;
+
+}
+.my-caption h3 {
+    padding: 0 30px;
+}
+.my-caption p {
+    font-size: 20px;
+    opacity: 0.9;
+    padding: 0 30px;
+}
+.skills  {
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+    padding: 20px 0;
+    margin: 20px 20px;
+    align-items: flex-start;
+
+}
+
+.skills .box {
+    color: white;
+    background-color: rgb(71, 185, 230);
+margin: 20px 20px;
+border-radius: 5px;
+
+}
+.skills .box p {
+    text-align: center;
+    padding: 7px;
+}

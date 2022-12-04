@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assest/css/dashboard.css">
+    <link rel="stylesheet" href="../../assest/css/bootstrap.css">
+
+    <title>Add project</title>
+
+</head>
+
+<body style="background-image: url(../assest/img/banner_back_illustration.png);">
+    <div style="display: flex; justify-content: space-between; text-align: start; background-color: rgba(255, 255, 255, .5) !important;-webkit-backdrop-filter: blur(5px) !important;backdrop-filter: blur(5px) !important; height: 100vh; width: 100%;"
+        class="pop index" id="pup">
+        <div style="display: flex;flex-direction: column; margin-top: 90px;">
+            <ul class="bg-dark text-light rounded-3 p-3 w-100  wf-bold "> <span class="fs-3">Tips
+                    for
+                    a successful business</span>
+                <li style="margin-left: 20px;" class="fs-6">Enter project details accurately
+                </li>
+                <li style="margin-left: 20px;" class="fs-6">Fill in all fields and provide examples of what you want
+                </li>
+                <li style="margin-left: 20px;" class="fs-6">The project is divided into several small phases
+                </li>
+            </ul>
+            <hr class="bg-dark">
+            <div>
+                <ul class="bg-dark text-light rounded-3 p-3 w-100 wf-bold "> <span class="fs-3">An Monospace site that
+                        guarantees
+                        your
+                        rights
+                    </span>
+                    <li style="margin-left: 20px;" class="fs-6">When you deal with a freelancer through an MonoSpace
+                        site, the site remains an
+                        intermediary between
+                        you and the freelancer who implements your project, and only when the project is completed in
+                        full,
+                        the amount is transferred to the account of the freelancer who implemented your project.
+
+                    </li>
+                </ul>
+                <div onclick="hidepop()" class="btn btn-primary w-100 fs-4 fw-bold" id="send" type="submit">post</div>
+
+            </div>
+        </div>
+        <div style="display: flex;justify-content: center;flex-direction: column; align-items: center;">
+            <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_dicn56pf.json" background="transparent"
+                speed="1" style="width: 500px; height: 500px;" loop autoplay ></lottie-player>
+
+
+        </div>
+    </div>
+    <!---==============End popup===============--->
+    <div class="d-flex flex-column" id="akera">
+        <div class="d-flex align-items-center flex-column" style="margin-top: 80px">
+            <div style="margin-top: 15px; width: 500px">
+                <div style="background-color: #1c1e21;align-items: flex-end !important;width: 100%;height: auto;border-radius: 7px;margin-bottom: 15px;
+                ">
+                    <div class="d-flex justify-content-end flex-column align-items-end m-2 p-2" dir="ltr">
+                        <div class="d-flex align-items-center" dir="ltr">
+                            <span class="text-light fw-bold" id="name_post">Name</span>
+
+                            <img style="width: 40px;border-radius: 50%;float: right;margin-left: 7px;
+                        " id="img_post" src="../assest/img/user.jpg" alt="" />
+                        </div>
+
+                        <div class="container m-2" dir="auto">
+                            <textarea style="resize:none;height: 25px;" class="form-control w-100" type="text"
+                                placeholder="project title" dir="auto" id="tx" dir="auto"></textarea>
+                            <textarea style="resize:none;height: auto;" class="form-control w-100 mt-3" type="text"
+                                placeholder="Project details" dir="auto" id="tx" dir="auto"></textarea>
+                            <!---------projected budget--------->
+                            <div class="row d-flex">
+                                <div class="col-sm-6">
+
+
+                                    <label for="project__budget" class="text-light fs-6"> projected budget</label>
+                                    <select name="budget" id="project__budget" class="form-control selectize-theme"
+                                        data-ui="placeholder-select">
+                                        <option value="" selected disabled hidden></option>
+                                        <option value="25-50" data-range-min="25" data-range-max="50">25 - 50 dollars
+                                        </option>
+                                        <option value="50-100" data-range-min="50" data-range-max="100">50 - 100
+                                            dollars
+                                        </option>
+                                        <option value="100-250" data-range-min="100" data-range-max="250">100 - 250
+                                            dollars
+                                        </option>
+                                        <option value="250-500" data-range-min="250" data-range-max="500">250 - 500
+                                            dollars
+                                        </option>
+                                        <option value="500-1000" data-range-min="500" data-range-max="1000">500 -
+                                            1000 dollars
+                                        </option>
+                                        <option value="1000-2500" data-range-min="1000" data-range-max="2500">1000 -
+                                            2500 dollars
+                                        </option>
+                                        <option value="2500-5000" data-range-min="2500" data-range-max="5000">2500 -
+                                            5000 dollars
+                                        </option>
+                                        <option value="5000-10000" data-range-min="5000" data-range-max="10000">5000
+                                            - 10000 dollars
+                                        </option>
+                                    </select>
+
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label for="project__budget" class="text-light fs-6">Expected term of delivery
+                                    </label>
+                                    <input type="text" class="form-control selectize-theme">
+                                </div>
+                            </div>
+                            <!---------projected budget end--------->
+
+                            <div style="outline: none; height: 50px" class=" text-center btn btn-primary mt-3 "
+                                onclick="showpop()" id="send">
+                                Add Post
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--=========######################################========-->
+                <!--=========######################################========-->
+                
+
+            </div>
+</body>
+<script src="../assest/js/main.js"></script>
+
+<script>
+    var sidebaropen = false
+    var sidebar = document.getElementById("side-bar")
+
+    function opensidebar() {
+        if (!sidebaropen) {
+            sidebar.classList.add("slide-bar-responsive")
+            sidebaropen = true
+        }
+    }
+
+
+    function closesidebar() {
+        if (sidebaropen) {
+            sidebar.classList.remove("slide-bar-responsive")
+            sidebaropen = false
+        }
+    }
+
+    function showpop() {
+        document.getElementById("pup").classList.add("open")
+    }
+
+    function hidepop() {
+        document.getElementById("pup").classList.remove("open")
+    }
+
+    document.querySelector(".disagree-btn").addEventListener("click", function () {
+        document.querySelector("main").classList.add("see")
+    })
+    document.querySelector("#send").addEventListener("click", function () {
+        document.querySelector("main").classList.remove("see")
+    })
+</script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</html>

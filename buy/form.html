@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assest/css/bootstrap.min.css" />
+    <link rel="icon" href="../assest/img/icon.png" type="image/x-icon" />
+    <title>MonoSpace</title>
+  </head>
+  <style>
+    @media (max-width: 630px) {
+      input,
+      .input {
+        width: 90% !important;
+      }
+    }
+  </style>
+
+  <body
+    style="background-image: url(../assest/img/banner_back_illustration.png)"
+  >
+    <div style="display: flex; justify-content: center !important">
+      <lottie-player
+        src="https://assets8.lottiefiles.com/packages/lf20_3vpepqy1.json"
+        background="transparent"
+        speed="1"
+        id="hid"
+        style="width: 500px; height: 300px"
+        loop
+        autoplay
+      ></lottie-player>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://assets7.lottiefiles.com/packages/lf20_4woj36oz.json"
+        background="transparent"
+        speed="0.5"
+        id="shown"
+        style="display: none; width: 500px; height: 500px"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+    <!------------->
+    <div
+      style="
+        text-align: center;
+        display: none !important;
+        border: 1px solid #212529;
+        border-radius: 10px;
+        width: 90%;
+      "
+      class="container d-flex justify-content-center flex-sm-column p-4"
+      id="show"
+    >
+      <div class="text-primary fw-bold fs-5 text-decoration-underline">
+        Usually a quick response,
+      </div>
+    </div>
+    <!------------->
+    <!-------looti anmi--------->
+    <main style="padding: 15px" id="hidden">
+      <div
+        style="border: 1px solid #212529; border-radius: 10px; width: 90%"
+        class="container d-flex justify-content-center flex-sm-column p-4"
+      >
+        <!---------------->
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <div class="text-dark fw-bold fs-5 text-decoration-underline">
+            tell us about your project,
+          </div>
+          <input
+            style="
+              width: 50%;
+              padding: 10px;
+              border: 0.3px solid #212529;
+              outline: none;
+            "
+            placeholder="your Name"
+            type="text"
+            name=""
+            id=""
+            class="my-3"
+          />
+          <!---------------->
+          <input
+            style="
+              width: 50%;
+              padding: 10px;
+              border: 0.3px solid #212529;
+              outline: none;
+            "
+            placeholder="Project Name"
+            type="text"
+            name=""
+            id=""
+            class="my-3"
+          />
+          <!---------------->
+          <textarea
+            placeholder="discribe ur project"
+            style="
+              width: 50%;
+              padding: 10px;
+              border: 0.3px solid #212529;
+              outline: none;
+            "
+            class="my-3 input"
+          ></textarea>
+          <!---------------->
+          <input
+            style="
+              width: 50%;
+              padding: 10px;
+              border: 0.3px solid #212529;
+              outline: none;
+            "
+            placeholder="your phone"
+            type="tel"
+            name=""
+            id=""
+            class="my-3"
+          />
+          <!---------------->
+          <input
+            style="
+              width: 50%;
+              padding: 10px;
+              border: 0.3px solid #212529;
+              outline: none;
+            "
+            placeholder="deadline at ?"
+            type="text"
+            name=""
+            id=""
+            class="my-3"
+          />
+          <!---------------->
+          <div class="btn btn-outline-purple" onclick="done()">Send</div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script>
+    function done() {
+      document.getElementById("hidden").style.display = "none";
+      document.getElementById("hid").style.display = "none";
+      document.getElementById("shown").style.display = "block";
+      document.getElementById("show").style.display = "block";
+    }
+  </script>
+</html>
